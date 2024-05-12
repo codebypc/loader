@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #3498db;
+}
+
+.loader {
+  border: 5px solid black;
+  width: 50px;
+  height: 50px;
+  border-top: 5px solid red;
+  border-radius: 50%;
+  animation: spin 1s ease infinite;
+  transition: all 0.5s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
